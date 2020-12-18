@@ -46,8 +46,11 @@ public class MedicareAssessment {
 	@Then("^user select Yes for Are you completing this for yourself$")
 	public void user_select_Yes_for_Are_you_completing_this_for_yourself() throws InterruptedException   {
 		//WebElement RadiobuttonYes = driver.findElement(By.id("mat-radio-110"));
-		WebElement RadiobuttonYes = driver.findElement(By.xpath("//mat-radio-button[@id='mat-radio-110']"));
+		//WebElement RadiobuttonYes = driver.findElement(By.xpath("//mat-radio-button[@id='mat-radio-110']"));
+		WebElement RadiobuttonYes = driver.findElement(By.xpath("//input[@id='mat-radio-2-input']"));
+
 		//mat-radio-button[@id='mat-radio-110']
+		//input[@id='mat-radio-2-input']
 		highLighterMethod(driver,RadiobuttonYes);
 		RadiobuttonYes.click();
 		Thread.sleep(2000);
