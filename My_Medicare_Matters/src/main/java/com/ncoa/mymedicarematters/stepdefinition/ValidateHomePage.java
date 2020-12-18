@@ -372,8 +372,8 @@ public class ValidateHomePage {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("window.scrollTo(0,200)");
 		Thread.sleep(5000);
-		EGbutton.click(); 
-	    
+		EGbutton.click();
+		
 	}
 
 	@Then("^User clicks on Back to Understand Enrollment link and validate user is on Understand Enrollment Page$")
