@@ -186,7 +186,7 @@ public class ValidateHomePage {
 		Mail.click();
 	    
 		
-		Runtime.getRuntime().exec("C:\\Users\\Muhammad.Ramzan\\Desktop\\MMM AS\\CloseMailWindow.exe");
+		//Runtime.getRuntime().exec("C:\\Users\\Muhammad.Ramzan\\Desktop\\MMM AS\\CloseMailWindow.exe");
 	    
 	}
 	
