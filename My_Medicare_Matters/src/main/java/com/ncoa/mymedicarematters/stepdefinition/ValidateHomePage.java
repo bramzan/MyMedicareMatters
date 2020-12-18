@@ -299,6 +299,89 @@ public class ValidateHomePage {
 	}    
 	
 
+//Homepage Explore Coverage Resource Content Library
+	
+	@Then("^User clicks on Explore Coverage Resources$")
+	public void user_clicks_on_Explore_Coverage_Resources() throws InterruptedException  {
+		WebElement ExCoverage = driver.findElement(By.xpath("//a[text()='EXPLORE COVERAGE']"));
+		highLighterMethod(driver,ExCoverage);
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollTo(0,600)");
+		Thread.sleep(5000);
+		ExCoverage.click(); 
+	}
 
+	@Then("^User clicks on When Does Medicare coverage Starts button$")
+	public void user_clicks_on_When_Does_Medicare_coverage_Starts_button() throws InterruptedException  {
+		WebElement WDMCSbutton = driver.findElement(By.xpath("//span[text()='When Does Medicare Coverage Start?']"));
+		highLighterMethod(driver,WDMCSbutton);
+		Thread.sleep(5000);
+		WDMCSbutton.click(); 
+	}
+
+	@Then("^User clicks on Back to Explore Coverage link and validate user is on Explore Coverage Page$")
+	public void user_clicks_on_Back_to_Explore_Coverage_link_and_validate_user_is_on_Explore_Coverage_Page() throws InterruptedException  {
+		WebElement BTECL = driver.findElement(By.xpath("//p[text()='Back to EXPLORE COVERAGE']"));
+		highLighterMethod(driver,BTECL);
+		Thread.sleep(5000);
+		BTECL.click(); 
+	}
+	
+	
+//Homepage Make Sense of Costs Resource Content Library
+	
+	@Then("^User clicks on Makes Sense of Costs Resources$")
+	public void user_clicks_on_Makes_Sense_of_Costs_Resources() throws InterruptedException  {
+		WebElement MSOCCoverage = driver.findElement(By.xpath("//a[text()='MAKE SENSE OF COSTS']"));
+		highLighterMethod(driver,MSOCCoverage);
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollTo(0,600)");
+		Thread.sleep(5000);
+		MSOCCoverage.click(); 
+	}
+
+	@Then("^User clicks on How Much Does Meicare Cost button$")
+	public void user_clicks_on_How_Much_Does_Meicare_Cost_button() throws InterruptedException {
+		WebElement HMDMCbutton = driver.findElement(By.xpath("//span[text()='How Much Does Medicare Cost?']"));
+		highLighterMethod(driver,HMDMCbutton);
+		Thread.sleep(5000);
+		HMDMCbutton.click(); 
+	}
+
+	@Then("^User clicks on Back to Makes Sense of Costs link and validate user is on Makes Sense of Costs Page$")
+	public void user_clicks_on_Back_to_Makes_Sense_of_Costs_link_and_validate_user_is_on_Makes_Sense_of_Costs_Page() throws InterruptedException  {
+		WebElement BTMSOClink = driver.findElement(By.xpath("//p[text()='Back to MAKE SENSE OF COSTS']"));
+		highLighterMethod(driver,BTMSOClink);
+		Thread.sleep(5000);
+		BTMSOClink.click(); 
+	}
+	
+//Homepage Understand Enrollment Resource Content Library
+	@Then("^User clicks on Understand Enrollment Resources$")
+	public void user_clicks_on_Understand_Enrollment_Resources() throws InterruptedException {
+		WebElement UECoverage = driver.findElement(By.xpath("//a[text()='UNDERSTAND ENROLLMENT']"));
+		highLighterMethod(driver,UECoverage);
+		Thread.sleep(5000);
+		UECoverage.click(); 
+	}
+
+	@Then("^User clicks on Enrollment Guide button$")
+	public void user_clicks_on_Enrollment_Guide_button() throws InterruptedException  {
+		WebElement EGbutton = driver.findElement(By.xpath("//span[text()='Enrollment Guide']"));
+		highLighterMethod(driver,EGbutton);
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollTo(0,200)");
+		Thread.sleep(5000);
+		EGbutton.click(); 
+	    
+	}
+
+	@Then("^User clicks on Back to Understand Enrollment link and validate user is on Understand Enrollment Page$")
+	public void user_clicks_on_Back_to_Understand_Enrollment_link_and_validate_user_is_on_Understand_Enrollment_Page() throws InterruptedException  {
+		WebElement BTUElink = driver.findElement(By.xpath("//p[text()='Back to UNDERSTAND ENROLLMENT']"));
+		highLighterMethod(driver,BTUElink);
+		Thread.sleep(5000);
+		BTUElink.click(); 
+	}
 
 }
